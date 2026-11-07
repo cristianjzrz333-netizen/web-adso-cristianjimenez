@@ -1,0 +1,45 @@
+/*PALETA DE COLORES
+Principal: #003249
+Fondo: #e3f1f2
+Texto: #0e536a
+*/
+
+/*===CUERPO DEL TEXTO===*/
+body {
+  background-color: #e3f1f2;
+  color : #0e536a;
+  font-family: "Redaction", Arial, sans-serif ;
+}
+
+/*===TITULO PRINCIPAL DE LA HOJA DE VIDA===*/
+header h1 {
+  font-size: 1.5 rem;
+  font-weight: 800;
+}
+
+/*===FOTO DE LA HOJA DE VIDA===*/
+#foto {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border : 2px solid #003249;
+}
+
+/*===TITULOS DE LA HOJA DE VIDA===*/
+h1, h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  color : #003249;
+}
+
+/*===TITULO Y TEXTO IMPORTANTE DE LA HOJA DE VIDA=== */
+.nombre {
+  font-weight: 600;
+}
+
+.importante {
+color : #003249;
+}
+
+/*===============================*/
+
