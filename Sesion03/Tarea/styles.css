@@ -1,0 +1,54 @@
+/* RESPUESTAS:
+1. Es mejor utilizar un solo archivo styles.css porque permite
+mantener un diseño uniforme, reutilizar estilos y facilitar
+el mantenimiento y las modificaciones de todas las páginas.
+
+2. Gana la regla de clase porque tiene mayor especificidad
+que el selector de etiqueta (h2), por lo que su color tiene
+prioridad.
+*/
+
+/*================================================*/
+/*COLORES DEL NEGOCIO:
+Color 1:#fdf8f3
+Color 2: #6b2b06
+Color 3: #e09e2a
+Color 4: #000000
+*/
+
+body {
+  background-color : #fdf8f3;
+  color : #6b2b06;
+  line-height : 1.5;
+  font-family : "Montserrat", Arial, sans-serif;
+}
+
+nav a {
+  color : #e09e2a;
+  text-decoration : none;
+  background-color : #6b2b06;
+  font-weight : 600;
+  padding : 4px;
+  border : 2px;
+  border-color : #000000;
+  border-style : solid;
+}
+
+h1, h2 {
+  color : #e09e2a;
+  font-weight : 600;
+}
+
+table {
+  border-collapse: collapse;  
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px 12px;           
+}
+
+th {
+  background-color: #6B2B06;
+  color: #e09e2a;
+}
