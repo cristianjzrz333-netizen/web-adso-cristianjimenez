@@ -1,0 +1,83 @@
+/*COLORES:
+1:#022B3A
+2:#10444e
+3:#FFFCF7
+4:#06BA63
+5:#A2D729
+6:#5a7e09
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #022B3A;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #fffcf7
+}
+
+.info {
+  max-width: 500px;
+  background-color: #10444e;
+  border-radius: 16px;
+  margin: 0 rem auto 0.5rem ;
+  padding:20px
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0.5rem auto 1rem;
+  padding: 1.25rem;
+  border-radius: 50%;
+  border: 3px solid #000;
+  font-size: 3rem;
+  background-color: #022b3a;
+}
+
+.tarjeta {
+  max-width: 500px;
+  max-height: 500px; 
+  background-color: #10444e;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 40px
+}
+ 
+.tarjeta h2 {
+  background-color: #06ba63;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  padding: 8px;
+}
+
+h2 {
+  margin: 20px auto;
+  padding: 8px;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 8px;
+  font-weight: 600; 
+  background-color: #a2d729;
+  border-radius: 15px
+}
+
+.tarjeta a:hover {
+  background-color: #5a7e09
+}
+
+.tarjeta a:link {
+  color: #022b3a;
+}
+
+.tarjeta a:visited {
+  color: #fffcf7;
+}
