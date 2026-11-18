@@ -1,0 +1,137 @@
+
+:root {
+  /* Colores SENA */
+  --verde-sena: #39A900;
+  --verde-oscuro: #007832;
+  --verde-claro: #D9E8D2;
+
+  /* Colores neutros */
+  --blanco: #FFFFFF;
+  --negro: #222222;
+  --fondo: #F4F7F2;
+  --gris: #a19898;
+
+  /* Colores de error */
+  --rojo: #b00000;
+  --rojo-claro: #fa9696
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: center;
+  color: var(--verde-oscuro);
+  background-color: var(--verde-claro);
+  
+}
+
+.formInscripcion {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--fondo);
+  box-shadow: 0 4px 16px rgb(0, 120, 50);
+}
+
+fieldset {
+  border: 1px solid var(--verde-oscuro);
+  border-radius: 16px;
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--blanco)
+}
+
+legend {
+  color: var(--verde-sena);
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+
+.opcion {
+  display: inline-block;
+}
+
+.opcion {
+  width: auto;
+}
+
+.campo{margin-bottom: 1rem;}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+input:not([type="checkbox"]){
+  font: inherit;
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 16px;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  accent-color: var(--verde-sena);
+}
+
+select {
+  font: inherit;
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 16px;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--negro);
+  outline-offset: 2px;
+}
+
+input:user-invalid, select:user-invalid,
+.invalido{
+  border-color: var(--rojo);
+  background-color: var(--rojo-claro);
+}
+
+.error {
+  display: block;
+  min-height: 1.2em;
+  color: #c62828;
+  font-size: 0.85rem;
+}
+
+.autorizacion{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.grupo{
+  border: 2px solid var(--verde-oscuro);
+}
+
+.boton {
+  border: 1px solid var(--verde-oscuro);
+  background-color: var(--verde-claro);
+  border-radius: 12px;
+  padding: 0.7rem 1.2rem;
+  font: inherit;
+}
+
+.boton:hover {
+  background-color: var(--verde-oscuro);
+}
