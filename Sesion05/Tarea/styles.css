@@ -1,0 +1,143 @@
+/* RESPUESTAS:
+1. Es mejor utilizar un solo archivo styles.css porque permite
+mantener un diseño uniforme, reutilizar estilos y facilitar
+el mantenimiento y las modificaciones de todas las páginas.
+
+2. Gana la regla de clase porque tiene mayor especificidad
+que el selector de etiqueta (h2), por lo que su color tiene
+prioridad.
+*/
+
+/*================================================*/
+/*COLORES DEL NEGOCIO:
+Color 1:#fdf8f3
+Color 2: #6b2b06
+Color 3: #e09e2a
+Color 4: #000000
+*/
+
+:root {
+  --blanco: #fdf8f3;
+  --cafe: #6b2b06;
+  --amarillo: #e09e2a;
+  --negro: #000000;
+
+  /* Colores de error */
+
+  --rojo: #fa1b3a;
+  --rojo-claro: #ebaeae;
+}
+
+*{box-sizing: border-box;}
+
+
+body {
+  background-color : var(--blanco);
+  color : var(--cafe);
+  line-height : 1.5;
+  font-family : "Montserrat", Arial, sans-serif;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+nav a {
+  color : var(--amarillo);
+  text-decoration : none;
+  background-color : var(--cafe);
+  font-weight : 600;
+  padding : 4px;
+  border : 2px;
+  border-color : var(--negro);
+  border-style : solid;
+}
+
+h1, h2 {
+  color : var(--amarillo);
+  font-weight : 600;
+}
+
+table {
+  border-collapse: collapse;  
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px 12px;           
+}
+
+th {
+  background-color: var(--cafe);
+  color: var(--amarillo);
+}
+
+.principal {
+  margin: 0 auto;
+}
+
+.formPagina {
+  max-width: 520px;
+  text-align: center;
+  background-color: var(--blanco);
+  border: 2px solid var(--cafe);
+  border-radius: 16px;
+  padding: 1rem 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 16px var(--cafe);
+
+}
+
+
+.campo label{
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+fieldset {
+  border: 2px solid var(--cafe);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+legend {
+  font-weight: 700;
+}
+
+input, select, textarea {
+  width: 100%;
+  border: 2px solid var(--cafe);
+  border-radius: 16px;
+  font: inherit;
+  padding: 0.5rem;
+  margin-bottom: 1rem; 
+}
+
+textarea {
+  resize: none;
+}
+
+
+.boton {
+  border: 2px solid var(--cafe);
+  border-radius: 12px;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--blanco);
+  font: inherit;
+}
+
+.boton:hover {
+  background-color: var(--cafe);
+  color: var(--blanco);
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--amarillo);
+  outline-offset: 2px;
+}
+
+input:user-invalid, select:user-invalid, textarea:user-invalid,
+.invalido {
+  background-color: var(--rojo-claro);
+  border-color: var(--rojo);
+}
+
