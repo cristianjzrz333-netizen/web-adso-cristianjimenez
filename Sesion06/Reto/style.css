@@ -1,0 +1,179 @@
+
+:root {
+    /* Colores principales */
+    --color-primario: #3B2418;
+    --color-secundario: #795548;
+    --color-acento: #B87945;
+
+    /* Colores de fondo */
+    --color-fondo: #FFF7EB;
+    --color-superficie: #EAD8C0;
+
+    /* Colores complementarios */
+    --color-oliva: #687653;
+    --color-texto: #33241C;
+    --color-texto-claro: #FFFFFF;
+
+    /* Estados de productos */
+    --color-agotado: #A94442;
+    --blanco: #ffffff;
+
+    /* Sombras */
+    --sombra-tarjeta: 0 4px 12px rgba(59, 36, 24, 0.12);
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--color-fondo);
+}
+
+h1{
+  text-align: center;
+  padding: 2rem;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-primario);
+  color: var(--color-texto-claro);
+  
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 20px;
+  
+}
+
+.menu a{
+  color: var(--color-texto-claro);
+  text-decoration: none;
+}
+
+.menu a:hover{
+  text-decoration: underline;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.vitrina {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  
+} 
+
+.producto{
+  display: flex;
+  flex: 0 1 220px;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--color-superficie)
+} 
+
+.producto:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.producto.agotado {
+  opacity: 0.6;
+}
+
+.producto.agotado .etiqueta {
+  background-color: var(--color-agotado);
+  color: var(--blanco);
+}
+
+.info{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.7rem;
+}
+
+.info h3{margin: 0;}
+
+.etiqueta {
+  align-self: flex-start;
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem
+}
+
+.precio {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-acento);
+}
+
+.pie{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.8rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: var(--color-primario);
+  color: var(--blanco);
+}
+
+.pie section {
+  flex: 1 1 220px;
+}
+
+.pie a{
+  color: var(--color-texto-claro)
+}
+
+.pie a:hover {
+  color: var(--color-oliva)
+}
+
+.boton {
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto 0 0;
+}
+
+.boton:hover {
+    background-color: var(--color-acento);
+}
