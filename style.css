@@ -51,6 +51,8 @@ body {
 }
 
 .tarjeta {
+  display:flex;
+  flex-direction: column;
   flex: 1 1 280px;
   max-width: 500px;
   background-color: #10444e;
@@ -62,23 +64,35 @@ body {
 .tarjeta h2 {
   background-color: #06ba63;
   border-radius: 30px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 8px;
+  width: 100%;
 }
 
 h2 {
   margin: 20px auto;
-  padding: 8px;
+  padding: auto;
 }
+
 
 .tarjeta a {
   text-decoration: none;
   display: inline-block;
-  margin-top: 1.5rem;
-  padding: 8px;
-  font-weight: 600; 
+  align-self: center;
+  margin-top: auto;
+  padding: 12px;
+  font-weight: 600;
   background-color: #a2d729;
-  border-radius: 15px
+  border-radius: 15px;
+}
+
+.tarjeta hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #fffcf7;
+    flex-shrink: 0;
+    margin: 10px 0 0 0 ;
+    padding: 8px;
 }
 
 .tarjeta a:hover {
